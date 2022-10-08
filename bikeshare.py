@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+from tabulate import tabulate
 
 cities = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -196,7 +197,7 @@ def raw_data(df):
     """Displays the first 5 lines of raw data upon request by the user."""
 
     # Prompt the user if they want to see 5 lines of raw data
-    user_input = input('\nWould you like to see the first 5 rows of raw data?\nPlease type "Yes" or "No".\n').lower()
+    user_input = input('\nWould you like to see the first 5 rows of raw data?\nPlease enter "Yes" or "No".\n').lower()
 
     # Display data if the answer is 'Yes'
     if user_input == 'yes':
@@ -207,7 +208,7 @@ def raw_data(df):
         while True:
             print('\n',df.iloc[i:i+5])
             i += 5
-            more_data=input('\nDo you want to see the next 5 rows?\nPlease type "Yes" or "No".\n').lower()
+            more_data=input('\nDo you want to see the next 5 rows?\nPlease enter "Yes" or "No".\n').lower()
             if more_data != 'yes':
                 break
 
@@ -224,7 +225,7 @@ def main():
         user_stats(df,city)
         raw_data(df)
 
-        restart = input('\nWould you like to restart? Please type "Yes" or "No".\n')
+        restart = input('\nWould you like to restart? Please enter "Yes" or "No".\n')
         if restart.lower() != 'yes':
             print('\nHave a nice day!')
             break
