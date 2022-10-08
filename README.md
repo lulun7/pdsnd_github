@@ -2,16 +2,16 @@
 
 # Explore US Bikeshare Data
 
-### Date created
-Thursday, ‎October ‎6, ‎2022
-
-### Description
+## Description
 In this project, you will make use of Python to **explore** data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.
 
-### Files used
+## Files used
 chicago.csv
 new_york_city.csv
 washington.csv
+
+### Date created
+Thursday, ‎October ‎6, ‎2022
 
 ### Credits
 https://github.com/udacity/pdsnd_github.git
