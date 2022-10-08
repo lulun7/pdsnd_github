@@ -12,6 +12,3 @@ washington.csv
 
 ### Date created
 Thursday, ‎October ‎6, ‎2022
-
-### Credits
-https://github.com/udacity/pdsnd_github.git
